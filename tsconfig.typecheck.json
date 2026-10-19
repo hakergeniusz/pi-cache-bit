@@ -4,8 +4,8 @@
 		"noEmit": true,
 		"baseUrl": ".",
 		"paths": {
-			"@earendel-works/pi-coding-agent": [".pi-typings/agent/"],
-			"@earendel-works/pi-tui": [".pi-typings/tui/"]
+			"@earendil-works/pi-coding-agent": [".pi-typings/agent/"],
+			"@earendil-works/pi-tui": [".pi-typings/tui/"]
 		}
 	},
 	"include": ["index.ts", "test.ts", ".pi-typings/*.d.ts"]

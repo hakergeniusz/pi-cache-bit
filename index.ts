@@ -22,14 +22,14 @@
 
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
-import type { ExtensionAPI, ExtensionCommandContext } from "@earendel-works/pi-coding-agent";
-import type { Theme } from "@earendel-works/pi-tui";
-import { Box, Text } from "@earendel-works/pi-tui";
+import type { ExtensionAPI, ExtensionCommandContext } from "@earendil-works/pi-coding-agent";
+import type { Theme } from "@earendil-works/pi-tui";
+import { Box, Text } from "@earendil-works/pi-tui";
 
-// @earendel-works/pi-coding-agent is provided by the host at runtime. Import it lazily so this module loads without the package being installed (keeps tests hermetic and avoids pulling the full agent graph into memory on activation).
-let _agent: typeof import("@earendel-works/pi-coding-agent") | null = null;
-async function agent(): Promise<typeof import("@earendel-works/pi-coding-agent")> {
-	return (_agent ??= await import("@earendel-works/pi-coding-agent"));
+// @earendil-works/pi-coding-agent is provided by the host at runtime. Import it lazily so this module loads without the package being installed (keeps tests hermetic and avoids pulling the full agent graph into memory on activation).
+let _agent: typeof import("@earendil-works/pi-coding-agent") | null = null;
+async function agent(): Promise<typeof import("@earendil-works/pi-coding-agent")> {
+	return (_agent ??= await import("@earendil-works/pi-coding-agent"));
 }
 
 // ---------------------------------------------------------------------------
